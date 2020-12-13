@@ -1,0 +1,55 @@
+
+Expense Tracker 
+
+!!!!!!Hooks & Context API!!!!!!
+
+Transaction.js
+Math.abs = buat angka selalu positif
+
+addTransaction.js
+menambahkan '+' didepan angka untuk mengubah menjadi angka\
+
+NodeJS
+Setiap buat backend harus ada npm init
+
+npm i express dotenv mongoose colors morgan
+
+colors = color text in console
+morgan = what method/route hit in console
+
+npm i -D nodemon concurrently
+
+concurrently = run backend server dan front (react) bersamaan
+ 
+klo pemanggilan database/api/promise bagusnya buat async
+
+Menit 43.40 Konek backend ke react
+"proxy":"http://localhost:5000"
+
+di backend package.json ditambah
+"client":"npm start --prefix client",
+"dev":"concurrently \"npm run server\" \"npm run client\""
+
+untuk koneksi nya pakai axios, install di react
+npm i axios
+
+perubahan di globalstate.js
+appreducer.js
+
+dipanggil di transactionslist.js
+
+morgan untuk liat method di url,status, dan waktu
+
+Menit 1.07.32 build app, di react
+npm run build
+
+ubah server js
+const path = require('path')
+
+ubah config.env
+NODE_ENV=production
+
+// klo build, foldernya jadi static
+untuk menjalankannya bisa di 
+node server.js
+localhost:5000
